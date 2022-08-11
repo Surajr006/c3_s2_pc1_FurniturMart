@@ -22,7 +22,7 @@ public class FurnitureItemImpl {
         System.out.println("Furniture type = " + fItem.furnitureType);
         System.out.println("Furniture grade = " + fItem.gradeOfFurniture);
         System.out.println("Furniture usage = " + fItem.furnitureUsage);
-        System.out.println("Price = " + fItem.price);
+        System.out.println("Price = " + amount);
 
     }
 }

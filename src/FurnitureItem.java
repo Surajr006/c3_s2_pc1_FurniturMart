@@ -5,6 +5,7 @@ public class FurnitureItem {
     String color;
     String furnitureUsage;
     double price;
+
     FurnitureItem(){
         furnitureCode=0;
         furnitureType="";
@@ -14,11 +15,11 @@ public class FurnitureItem {
     }
     double calcDiscount()
     {
-        if (furnitureUsage=="Outdoor")
-            return price-0.05*price;
-        else {
-            System.out.println(furnitureUsage);
+        System.out.println("furnitureUsage = " + furnitureUsage);
+        if (furnitureUsage.equalsIgnoreCase("Outdoor"))
+            return price - (0.05 * price);
+        else
             return price;
-        }
+
     }
 }
