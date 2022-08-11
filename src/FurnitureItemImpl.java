@@ -19,6 +19,9 @@ public class FurnitureItemImpl {
         fItem.price= sc.nextInt();
         //Display Details
         System.out.println("Furniture type = " + fItem.furnitureType);
+        System.out.println("Furniture grade = " + fItem.gradeOfFurniture);
+        System.out.println("Furniture usage = " + fItem.furnitureUsage);
+        System.out.println("Price = " + fItem.price);
 
     }
 }
