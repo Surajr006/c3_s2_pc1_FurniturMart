@@ -14,6 +14,9 @@ public class FurnitureItem {
     }
     double calcDiscount()
     {
-        return 0.05*price;
+        if (furnitureUsage=="Outdoor")
+        return price-0.05*price;
+        else
+            return price;
     }
 }
