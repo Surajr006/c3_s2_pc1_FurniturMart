@@ -15,8 +15,10 @@ public class FurnitureItem {
     double calcDiscount()
     {
         if (furnitureUsage=="Outdoor")
-        return price-0.05*price;
-        else
+            return price-0.05*price;
+        else {
+            System.out.println(furnitureUsage);
             return price;
+        }
     }
 }

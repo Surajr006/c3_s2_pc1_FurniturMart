@@ -6,7 +6,7 @@ public class FurnitureItemImpl {
         Scanner sc=new Scanner(System.in);
         FurnitureItem fItem= new FurnitureItem();
         //fItem.price=20;
-        double amount=fItem.calcDiscount();
+
         //System.out.println("amount = " + amount);
         //Getting user input
         System.out.println("Enter furniture type:Chair,Tables,Cupboards or Stools");
@@ -17,6 +17,7 @@ public class FurnitureItemImpl {
         fItem.furnitureUsage= sc.next();
         System.out.println("Enter Price");
         fItem.price= sc.nextInt();
+        double amount=fItem.calcDiscount();
         //Display Details
         System.out.println("Furniture type = " + fItem.furnitureType);
         System.out.println("Furniture grade = " + fItem.gradeOfFurniture);
